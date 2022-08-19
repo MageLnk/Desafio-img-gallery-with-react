@@ -9,7 +9,14 @@ body {
   background-color: #000000d9;
   color: white;
   height: 8vh;
-  padding: 0 2rem 0 1.5rem;
+  padding: 0.5rem 2rem 0 1.5rem;
+}
+.header-logo-icon {
+  font-size: 26px;
+}
+.header-title {
+  font-size: 40px;
+  color: white;
 }
 
 .content-row-container {
