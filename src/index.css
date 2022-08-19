@@ -1,4 +1,26 @@
+@import "~antd/dist/antd.css";
+
 body {
   margin: 0;
   padding: 0;
+}
+
+.header-row-container {
+  background-color: #000000d9;
+  color: white;
+  height: 8vh;
+  padding: 0 2rem 0 1.5rem;
+}
+
+.content-row-container {
+  background-color: gray;
+  color: black;
+  height: 84vh;
+}
+
+.footer-row-container {
+  background-color: black;
+  color: white;
+  height: 8vh;
+  padding-right: 2rem;
 }
