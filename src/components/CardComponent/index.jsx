@@ -1,3 +1,5 @@
+// Components
+import LikeButton from "./LikeButton";
 // Style
 import { Row, Col, Card } from "antd";
 import "./CardComponent.css";
@@ -8,7 +10,6 @@ const CardComponent = () => {
     <Row className="content-card-container">
       <Col span={24}>
         <Card
-          hoverable
           style={{
             width: 240,
           }}
@@ -16,7 +17,7 @@ const CardComponent = () => {
             <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
           }
         >
-          <Meta title="Europe Street beat" />
+          <Meta title={<LikeButton />} />
           <span style={{ padding: 0, margin: 0 }}>sadfas</span>
         </Card>
       </Col>
