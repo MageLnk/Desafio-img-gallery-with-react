@@ -2,21 +2,23 @@
 import { Row, Col } from "antd";
 // App
 
-const HeaderContent = () => {
+const Header = () => {
   return (
     <>
-      <Row>
-        <Col span={24}>
-          <span>Logo</span>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <span>Final o k ase</span>
-        </Col>
+      <Row className="header-row-container" justify="space-between" align="middle">
+        <Row>
+          <Col span={24}>
+            <span>Logo</span>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <span>Final o k ase</span>
+          </Col>
+        </Row>
       </Row>
     </>
   );
 };
 
-export default HeaderContent;
+export default Header;
