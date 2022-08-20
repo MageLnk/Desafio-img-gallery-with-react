@@ -22,7 +22,8 @@ body {
 .content-row-container {
   background-color: whitesmoke;
   color: black;
-  height: 84vh;
+  height: auto;
+  padding-bottom: 2rem;
 }
 
 .footer-row-container {
