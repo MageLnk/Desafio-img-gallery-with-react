@@ -1,7 +1,7 @@
 // Components
 import LogOutModal from "./LogOutModal";
 // Style
-import { Row, Col } from "antd";
+import { Row, Col, Input } from "antd";
 // Decoration
 import { MdCameraEnhance } from "react-icons/md";
 // App
@@ -13,11 +13,12 @@ const Header = () => {
         <Row>
           <Col span={24}>
             <MdCameraEnhance className="header-logo-icon" />
+            <span className="header-title">Photogram</span>
           </Col>
         </Row>
         <Row>
           <Col span={24}>
-            <h1 className="header-title">Photogram</h1>
+            <Input />
           </Col>
         </Row>
         <Row>
