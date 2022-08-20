@@ -6,7 +6,7 @@ import { Row, Col, Input } from "antd";
 import { MdCameraEnhance } from "react-icons/md";
 // App
 
-const Header = () => {
+const Header = ({ searchInput, setSearchInput, apiCall }) => {
   return (
     <>
       <Row className="header-row-container" justify="space-between" align="middle">
@@ -18,7 +18,21 @@ const Header = () => {
         </Row>
         <Row>
           <Col span={24}>
-            <Input />
+            <form
+              typeof="submit"
+              onSubmit={(e) => {
+                e.preventDefault();
+                apiCall(searchInput);
+              }}
+            >
+              <Input
+                placeholder="Qué imágenes desea buscar"
+                value={searchInput}
+                onChange={(e) => {
+                  setSearchInput(e.target.value);
+                }}
+              />
+            </form>
           </Col>
         </Row>
         <Row>
