@@ -21,5 +21,3 @@ const LikeButton = () => {
 };
 
 export default LikeButton;
-
-// <AiOutlineHeart style={{ cursor: "pointer" }} onClick={() => handleClick(!likeClic)} />

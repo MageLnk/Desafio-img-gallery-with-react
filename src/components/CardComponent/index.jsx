@@ -60,45 +60,7 @@ const CardComponent = ({ arrayData }) => {
     });
   };
 
-  //console.log(arrayData);
   return <>{!arrayData ? <span>Loading...</span> : deployData()}</>;
 };
 
 export default CardComponent;
-
-/*
-<Row className="content-card-container">
-      <Col span={24}>
-        <Card
-          style={{
-            width: 240,
-          }}
-          cover={
-            <img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />
-          }
-        >
-          <Meta title={<LikeButton />} />
-          <Comments comments={allComentsArray} />
-          <Row justify="center">
-            <Col span={23}>
-              <form
-                typeof="submit"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  handleComments(newComentary);
-                  setNewComentary("");
-                }}
-              >
-                <Input
-                  className="card-component-input"
-                  placeholder="Comentario..."
-                  value={newComentary}
-                  onChange={(e) => setNewComentary(e.target.value)}
-                />
-              </form>
-            </Col>
-          </Row>
-        </Card>
-      </Col>
-    </Row>
-*/

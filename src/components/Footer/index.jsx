@@ -8,7 +8,10 @@ const Footer = () => {
     <Row className="footer-row-container" justify="space-between" align="middle">
       <Row>
         <Col style={{ paddingLeft: "1rem" }} span={24}>
-          <span>Página creada para hacer una galería de imágenes, con un toque especial</span>
+          <span>
+            Página creada para hacer una galería de imágenes solicitada por D. Latam, con un toque
+            especial
+          </span>
         </Col>
       </Row>
       <Row>
