@@ -4,3 +4,6 @@
 .content-card-container .ant-card-body {
   padding: 0.3rem;
 }
+.content-card-container .card-component-input {
+  padding: 0.2rem;
+}
