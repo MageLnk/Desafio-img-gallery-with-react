@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
 // Style
 import { Row, Col } from "antd";
 
-const Comments = ({ newComentary }) => {
-  const comments = ["newComentary"];
+const Comments = ({ comments }) => {
   const handleComments = () => {
     return comments.map((data, i) => {
       return (
