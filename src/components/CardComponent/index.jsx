@@ -18,6 +18,13 @@ const CardComponent = ({ arrayData }) => {
     newArray = [];
   };
 
+  //const addComment = (id, comment) => {
+  //  let newArray = [{ media_id: id, comment }];
+  //  let fusionArray = new Array(allComentsArray);
+  //  fusionArray.push(newArray);
+  //  //    console.log("Viendo algo", fusionArray, typeof fusionArray);
+  //  setAllComentsArray(fusionArray);
+  //};
   const deployData = () => {
     if (arrayData === "") {
       return <></>;
@@ -40,6 +47,7 @@ const CardComponent = ({ arrayData }) => {
                     typeof="submit"
                     onSubmit={(e) => {
                       e.preventDefault();
+                      //addComment(info.media_id, newComentary);
                       handleComments(newComentary);
                       setNewComentary("");
                     }}
